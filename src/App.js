@@ -35,9 +35,9 @@ function App() {
   const showAbilities = () => {
     if (pokemon.name) {
       Swal.fire({
-        imageUrl : "",
+        imageUrl : `${pokemon.sprites.front_default}`,
         title: "Abilities",
-        text: `${pokemon.abilities.map( ab => {return '\n'+ab.ability.name})}`
+        text: `${pokemon.abilities.map( ab => {return '\n'+ab.ability.name})}`,
       })
     } else {
       Swal.fire({
