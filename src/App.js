@@ -62,6 +62,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className='flex-container'>
+          <a href='https://github.com/rodrilv/Pokemon-React-App'>GitHub Repo ;)</a>
           <img src={pokemon?.sprites?.front_default ?? noPokemon} className="poke-image" alt="logo" />
           <img src={pokemon?.sprites?.back_default ?? noPokemon} className="poke-image" alt="logo" />
         </div>
