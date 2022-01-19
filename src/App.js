@@ -62,7 +62,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className='flex-container'>
-          <a href='https://github.com/rodrilv/Pokemon-React-App'>GitHub Repo ;)</a>
           <img src={pokemon?.sprites?.front_default ?? noPokemon} className="poke-image" alt="logo" />
           <img src={pokemon?.sprites?.back_default ?? noPokemon} className="poke-image" alt="logo" />
         </div>
@@ -74,6 +73,7 @@ function App() {
         <p>
           {pokemon?.id ?? "No Pokemon ID"}
         </p>
+        <p><a href='https://github.com/rodrilv/Pokemon-React-App'>GitHub Repo ;)</a></p>
 
         <div className='flex-container'>
           <button onClick={() => fetchPokemon((BackPokemon()))} className='button'>Back</button>
